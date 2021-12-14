@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ask a Question</title>
+    <link rel="shortcut icon" href="media/favicon-32x32.png">
+    <link rel="stylesheet" href="stylesheet/style.css">
+</head>
+<body>
+    <header class="test">
+        <nav> 
+            <img src="media/Voyager.png" alt="">
+            <div class="Navigation">
+                <ul>
+                     <i id="menu-close" class="fas fa-times"></i>
+                    <li><a  href="index.html">Home</a></li>
+                    <li><a href="New folder/Places.html">Places</a>
+                         <ul class="dropdown">
+                            <li><a href ="projectphase1/getquote.html">Get Quotation</a></li>
+                            <li><a href ="new 2/blog.html">Blogs</a></li>
+                         </ul>
+                     </li>
+                    <li><a href="projectphase1/testimonials.html">Testimonials</a>
+                     </li> 
+                    <li><a href="projectphase1/signin.html">Sign In</a>
+                     </li>   
+                    <li><a href="#">Help</a>
+                         <ul class="dropdown">
+                             <li><a href ="./new 2/contact.html">Contact Us</a></li>
+                             <li><a href ="./new 2/about.html">About Us</a></li>
+                             <li><a href ="questionform.html">Ask A Question</a></li>
+                         </ul>
+                     </li>
+                </ul> 
+            </div>
+         </nav>
+    </header>
+    <div class = "questionbox">
+    <h1>Ask a Question</h1>
+    <form action="confirm.html" method="get">
+        <fieldset>
+            <legend>Got a Question? Have it answered !</legend>
+        
+            <label for="email_address">E-Mail:</label>
+            <input type="text" name="email_address" id="email_address">
+            <span>*</span><br><br>
+
+            <label for="phone">Mobile Phone:</label>
+            <input type="text" name="phone" id="phone">
+            <span>*</span><br><br>
+    
+            <label for="country">Country:</label>
+            <select name="country" id="country">
+                <option value="">Select a country</option>
+                <option>Australia</option>
+                <option>Belgium</option>
+                <option>Canada</option>
+                <option>China</option>
+                <option>Denmark</option>
+                <option>England</option>
+                <option>France</option>
+                <option>Germany</option>
+                <option>India</option>
+                <option>New Zealand</option>
+                <option>USA</option>
+            </select>
+            <span>*</span><br><br>
+
+            <label for="question">Your Question:</label><br>
+            <textarea rows="4" cols="50" name="question" id="question"></textarea>
+            <span>*</span><br><br>
+
+            <label for="offer"></label>Would you like to recieve announcements about new products and special offers?</label>
+            <input type="checkbox" id="offer" name="offer"><br><br>
+
+            <label>Terms of Service:</label>
+            <input type="checkbox" name="terms" id="terms"
+                value="yes">I accept
+            <span>*</span><br><br>
+
+            <label>&nbsp;</label>
+            <input type="button" id="register" value="Register">
+            <input type="button" id="reset_form" value="Reset"><br><br>
+        </fieldset>
+    </form>
+    <script src="register.js"></script><br><br>
+    </div>
+    <footer>
+
+        <div class="row">
+            <div class="col-4">
+                <h2 style="margin-bottom: 30px;">Site links</h2>
+                <div class="footer-link"><a href="./index.html">Home</a></div>
+            <div class="footer-link"><a href="./new 2/contact.html">Contact us</a></div>
+            <div class="footer-link"><a href="./new 2/about.html">About us</a></div>
+            <div class="footer-link"><a href="./terms.html">Terms & Conditions</a></div><br>
+            </div>
+            <div class="col-4">
+                <h2 style="margin-bottom: 30px;">Contact Us</h2>
+                <div class="footer-link">
+                    <p>Phone: +1 (xxx) xxx-xxxx</p>
+                </div>
+                <div class="footer-link">
+                    <p>Email: xxaabb@abc.com</p>
+                </div>
+            </div>
+            <div class="col-4">
+                <h2 style="margin-bottom: 30px;">Address</h2>
+                <div class="footer-link">
+                    <p>123 street name, ontario, canada</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.2692505416353!2d-79.38924548451877!3d43.64256617912164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34d68bf33a9b%3A0x15edd8c4de1c7581!2sCN%20Tower!5e0!3m2!1sen!2sca!4v1634517135938!5m2!1sen!2sca" width="250" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+
+
+
+        <p><i><b>Copyright ©2021 All rights reserved | Team Matrix<br>
+        <a href="mailto:voyagercanada@gmail.com" >voyagercanada@gmail.com</a></i></b></p>
+    </footer>
+</body>
+</html>

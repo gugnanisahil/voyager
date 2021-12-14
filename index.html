@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voyager</title>
+    <link rel="shortcut icon" href="media/favicon-32x32.png">
+    <meta name="description" content="Voyager"/>
+    <link rel="stylesheet" href="stylesheet/style.css">
+</head>
+<body>
+    <header class="test">
+        <nav> 
+            <img src="media/Voyager.png" alt="">
+            <div class="Navigation">
+                <ul>
+                     <i id="menu-close" class="fas fa-times"></i>
+                    <li><a  href="index.html">Home</a></li>
+                    <li><a href="New folder/Places.html">Places</a>
+                         <ul class="dropdown">
+                            <li><a href ="projectphase1/getquote.html">Get Quotation</a></li>
+                            <li><a href ="new 2/blog.html">Blogs</a></li>
+                         </ul>
+                     </li>
+                    <li><a href="projectphase1/testimonials.html">Testimonials</a>
+                     </li> 
+                    <li><a href="projectphase1/signin.html">Sign In</a>
+                     </li>   
+                    <li><a href="#">Help</a>
+                         <ul class="dropdown">
+                             <li><a href ="./new 2/contact.html">Contact Us</a></li>
+                             <li><a href ="./new 2/about.html">About Us</a></li>
+                             <li><a href ="questionform.html">Ask A Question</a></li>
+                         </ul>
+                     </li>
+                </ul> 
+            </div>
+         </nav>
+    </header>
+    
+    <main class="container">
+
+    
+        <h1 class="page-h1">Discover your Place</h1>
+        <p class="page-p">Explore the exotic places around the beautiful country of <b>Canada</b></p>
+
+        <section class="Resource-main">
+
+            <article class="Resource-tile">
+                <div class="Resource-tile-media">
+                  <img class="Resource-tile-img" src="media/pic1.jpeg">
+                </div>
+          
+                <div class="Resource-tile-content">
+                  <h2 class="Resource-tile-title">Providing you with the best possible locations</h2>
+                </div>
+            </article>
+            <article class="Resource-tile">
+                <div>
+                    <img src="media/image1.jpg" name="slideshow" id="slideshow"  width="430" height="250"></a>
+                </div>
+            <script>
+    
+                let myImagesArray = ["media/image1.jpg","media/image2.jpg","media/image3.jpg","media/image4.jpg","media/image5.jpg","media/image6.jpg"];
+
+                let ImageNumber = 0;
+                let difference = myImagesArray.length -1;
+            
+                let delay = 3500; 
+            
+            
+                setInterval('ChangeImages(1)', delay);
+
+             
+                function ChangeImages(direction)
+                {
+                    
+                    ImageNumber = ImageNumber + direction;
+            
+                    if(ImageNumber > difference)
+                    {
+                        ImageNumber = 0;
+                    }
+            
+                    if(ImageNumber < 0)
+                    {
+                        ImageNumber = difference;
+                    }
+                    document.getElementById('slideshow').src = myImagesArray[ImageNumber];
+    
+                }
+            </script>
+          
+                <div class="Resource-tile-content">
+                  <h2 class="Resource-tile-title">Take a virtual tour of beautiful places</h2>
+                </div>
+          </article>
+            <article class="Resource-tile">
+                <div class="Resource-tile-media">
+                  <img class="Resource-tile-img" src="media/image4.jpg">
+                </div>
+          
+                <div class="Resource-tile-content">
+                  <h2 class="Resource-tile-title">Providing you with travel with less expense</h2>
+                </div>
+            </article> 
+        </section>
+        <h1 class="page-h1" style="margin-top: 20px;">Lets find a Destination !</h1>    
+        <section class="Resource-main">
+    
+            <article class="Resource-tile">
+          
+                <div class="Resource-tile-content">
+                  <h2 class="Resource-tile-title-1">Providing you with the best possible locations</h2>
+                  <p class="Resource-tile-para">No matter where in the world you want the go, Voyager has got you covered. From booking and support, our extensive network connects Canada to the globe.</p>
+                </div>
+            </article>
+            <article class="Resource-tile">
+          
+                <div class="Resource-tile-content">
+                  <h2 class="Resource-tile-title-1">Best services provided</h2>
+                  <p class="Resource-tile-para"><a href="home.html">Voyager</a> can deliver competitive prices, saving you more on travel everyday. Register as a member to receive even bigger discounts!</p>
+                </div>
+            </article>
+            <article class="Resource-tile">
+          
+                <div class="Resource-tile-content">
+                  <h2 class="Resource-tile-title-1">Your Security is our Priority</h2>
+                  <p class="Resource-tile-para">Data security is our top priority. Whether you're paying by credit card or via one of the multiple third party payment options available, your payment data will always be protected.</p>
+                </div>
+            </article>
+        </section>    
+    </main>
+
+   <footer>
+
+    <div class="row">
+        <div class="col-4">
+            <h2 style="margin-bottom: 20px;">Site links</h2>
+            <div class="footer-link"><a href="./index.html">Home</a></div>
+            <div class="footer-link"><a href="./new 2/contact.html">Contact us</a></div>
+            <div class="footer-link"><a href="./new 2/about.html">About us</a></div>
+            <div class="footer-link"><a href="./terms.html">Terms & Conditions</a></div><br>
+        </div>
+        <div class="col-4">
+            <h2 style="margin-bottom: 30px;">Contact Us</h2>
+            <div class="footer-link">
+                <p>Phone: +1 (659) 444-2380</p>
+            </div>
+            <div class="footer-link">
+                <p>Email: voyagercanada@gmail.com</p><br>
+            </div>
+        </div>
+        <div class="col-4">
+            <h2 style="margin-bottom: 30px;">Address</h2>
+            <div class="footer-link">
+                <p>123 street name, ontario, canada</p><br>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.2692505416353!2d-79.38924548451877!3d43.64256617912164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34d68bf33a9b%3A0x15edd8c4de1c7581!2sCN%20Tower!5e0!3m2!1sen!2sca!4v1634517135938!5m2!1sen!2sca" width="250" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe><br>
+            </div>
+        </div>
+    </div>
+
+
+
+    <p><i><b>Copyright ©2021 All rights reserved | Team Matrix<br>
+    <a href="mailto:voyagercanada@gmail.com" >voyagercanada@gmail.com</a></i></b></p><br>
+</footer>
+    
+
+    
+</body>
+</html>

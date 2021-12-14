@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="stylesA/form.css">
+    <script src="validate.js"></script>
+</head>
+
+<body>  
+
+  <header class="test">
+    <nav> 
+        <img src="Voyager.png" alt="">
+        <div class="Navigation">
+            <ul>
+                 <li id="menu-close" class="fas fa-times"></i>
+                <li><a  href="../../../index.html">Home</a></li>
+                <li><a href="../../../New folder/Places.html">Places</a>
+                     <ul class="dropdown">
+                      <li><a href ="../../../projectphase1/getquote.html">Get Quotation</a></li>
+                             <li><a href ="../../../new 2/blog.html">Blogs</a></li>
+                     </ul>
+                 </li>
+                <li><a href="../../../projectphase1/testimonials.html">Testimonials</a>
+                 </li> 
+                <li><a href="../../../projectphase1/signin.html">Sign In</a>
+                 </li>   
+                <li><a href="#">Help</a>
+                     <ul class="dropdown">
+                         <li><a href ="../../../new 2/contact.html">Contact Us</a></li>
+                         <li><a href ="../../../questionform.html">Ask A Question</a></li>
+                     </ul>
+                 </li>
+            </ul> 
+        </div>
+     </nav>
+</header>
+
+<div class="mform">
+<form name="myform" method="get" action="thanks.html" onsubmit="return validateform()" >  
+    
+    <div class="ab">
+    <fieldset class="center">
+        <h2>Tell us about yourself</h2><br/>
+        Name: <input type="text" name="name"><br/><br/>  
+        Email: <input type="text" name="email"><br/>
+    </fieldset> 
+    <fieldset class="center">
+        <h2 class="topic-text">Rate our work</h2><br/>
+
+        <div class="container mark">
+          <label>
+            5 <input type="radio" id="five" name="rating" value="5"> Very good
+          </label>
+        </div>
+        <div class="container mark">
+          <label>
+            4 <input type="radio" name="rating" value="4"> Good
+          </label>
+        </div>
+        <div class="container mark">
+          <label>
+            3 <input type="radio" name="rating" value="3"> Ok
+          </label>
+        </div>
+        <div class="container mark">
+          <label>
+            2 <input type="radio" name="rating" value="2"> Bad
+          </label>
+        </div>
+        <div class="container mark">
+          <label>
+            1 <input type="radio" name="rating" value="1"> Very bad
+          </label>
+        </div><br/>
+
+        <h2 class="topic-text">Do you Want to Add something...?</h2><br/>
+
+        <textarea> Leave us anything we have missed..</textarea>
+      </fieldset><br>
+        <input type="submit" value="SUBMIT" id="sbtn">  
+        </div>
+</form>  
+</div>
+<footer>
+
+  <div class="row">
+      <div class="col-4">
+          <h2 style="margin-bottom: 20px;">Site links</h2>
+          <div class="footer-link"><a href="../index.html">Home</a></div>
+          <div class="footer-link"><a href="../new 2/contact.html">Contact us</a></div>
+          <div class="footer-link"><a href="../new 2/about.html">About us</a></div>
+          <div class="footer-link"><a href="../terms.html">Terms & Conditions</a></div><br>
+      </div>
+      <div class="col-4">
+          <h2 style="margin-bottom: 30px;">Contact Us</h2>
+          <div class="footer-link">
+              <p>Phone: +1 (xxx) xxx-xxxx</p>
+          </div>
+          <div class="footer-link">
+              <p>Email: xxaabb@abc.com</p><br>
+          </div>
+      </div>
+      <div class="col-4">
+          <h2 style="margin-bottom: 30px;">Address</h2>
+          <div class="footer-link">
+              <p>123 street name, ontario, canada</p><br>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.2692505416353!2d-79.38924548451877!3d43.64256617912164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34d68bf33a9b%3A0x15edd8c4de1c7581!2sCN%20Tower!5e0!3m2!1sen!2sca!4v1634517135938!5m2!1sen!2sca" width="250" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe><br>
+          </div>
+      </div>
+  </div>
+  
+
+
+  <p><i><b>Copyright ©2021 All rights reserved | Team Matrix<br>
+  <a href="mailto:voyagercanada@gmail.com" >voyagercanada@gmail.com</a></i></b></p><br>
+</footer>
+</body>
+</html>
+    
+
+
